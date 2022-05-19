@@ -1,0 +1,736 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8383051800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As a user I want to create new account with valid credentials",
+        "description": "",
+        "id": "creating-new-account-test;as-a-user-i-want-to-create-new-account-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 626207400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9999940400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks on the sign in button from the homepage",
+            "match": {
+              "location": "CreateAccountSteps.userClicksOnTheSignInButtonFromTheHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89241300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "enters an email in the email address field",
+            "match": {
+              "location": "CreateAccountSteps.entersAnEmailInTheEmailAddressField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53546100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on create an account tab",
+            "match": {
+              "location": "CreateAccountSteps.clicksOnCreateAnAccountTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8152487300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "fill all mandatory fields",
+            "match": {
+              "location": "CreateAccountSteps.fillAllMandatoryFields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "James",
+                  "Bond",
+                  "abc12456",
+                  "123 Abc Street",
+                  "London",
+                  "Florida",
+                  "12345",
+                  "01234567890"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18875662000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on register",
+            "match": {
+              "location": "CreateAccountSteps.clickOnRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31680200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify my account text \"MY ACCOUNT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MY ACCOUNT",
+                  "offset": 24
+                }
+              ],
+              "location": "CreateAccountSteps.verifyMyAccountText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27464800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify user can see his name on top right \"James Bond\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "James Bond",
+                  "offset": 43
+                }
+              ],
+              "location": "CreateAccountSteps.verifyUserCanSeeHisNameOnTopRight(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14893034600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "As a user I want to see an error message while trying",
+        "description": "to create account with invalid credentials",
+        "id": "creating-new-account-test;as-a-user-i-want-to-see-an-error-message-while-trying",
+        "after": [
+          {
+            "result": {
+              "duration": 627374200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14101059300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on the sign in button from the homepage",
+            "match": {
+              "location": "CreateAccountSteps.userClicksOnTheSignInButtonFromTheHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80630200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enters an email in the email address field",
+            "match": {
+              "location": "CreateAccountSteps.entersAnEmailInTheEmailAddressField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47198400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "clicks on create an account tab",
+            "match": {
+              "location": "CreateAccountSteps.clicksOnCreateAnAccountTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10488664700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "fill all mandatory fields",
+            "match": {
+              "location": "CreateAccountSteps.fillAllMandatoryFields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "$%1234",
+                  "DD12**",
+                  "abc$%12456",
+                  "123 Abc Str%%t",
+                  "Lo$%^on",
+                  "Florida",
+                  "123ssa45",
+                  "0123abcd67890"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9961651000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on register",
+            "match": {
+              "location": "CreateAccountSteps.clickOnRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29398000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify that invalid information will give an error message \"There are 6 errors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "There are 6 errors",
+                  "offset": 60
+                }
+              ],
+              "location": "CreateAccountSteps.verifyThatInvalidInformationWillGiveAnErrorMessage(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creating new account Test",
+    "description": "",
+    "id": "creating-new-account-test",
+    "keyword": "Feature",
+    "uri": "createaccounttest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13824072700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "As a user I want to delete an item from the basket and see basket is empty",
+        "description": "",
+        "id": "test-for-deleting-item-from-cart;as-a-user-i-want-to-delete-an-item-from-the-basket-and-see-basket-is-empty",
+        "after": [
+          {
+            "result": {
+              "duration": 683935000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161165000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User selects Women \"Women\" tab from the main menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 20
+                }
+              ],
+              "location": "DeletionTestSteps.userSelectsWomenTabFromTheMainMenu(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10910542000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Select Blouses \"Summer Dresses\" from the sub menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Summer Dresses",
+                  "offset": 16
+                }
+              ],
+              "location": "DeletionTestSteps.selectBlousesFromTheSubMenu(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10400115000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Adds item to cart",
+            "match": {
+              "location": "DeletionTestSteps.addsItemToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4785475900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "closes shopping cart window",
+            "match": {
+              "location": "DeletionTestSteps.closesShoppingCartWindow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239438600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify shopping cart has delete button",
+            "match": {
+              "location": "DeletionTestSteps.verifyShoppingCartHasDeleteButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46292300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "removes item from cart",
+            "match": {
+              "location": "DeletionTestSteps.removesItemFromCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28127863600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verifies the banner display \"Your shopping cart is empty.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your shopping cart is empty.",
+                  "offset": 29
+                }
+              ],
+              "location": "DeletionTestSteps.verifiesTheBannerDisplay(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test for deleting item from cart",
+    "description": "",
+    "id": "test-for-deleting-item-from-cart",
+    "keyword": "Feature",
+    "uri": "deletiontest.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8017373400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify that user can drap the map to see a store from West Palm Beach",
+        "description": "",
+        "id": "finding-a-store-on-the-\u0027our-stores\u0027-page;verify-that-user-can-drap-the-map-to-see-a-store-from-west-palm-beach",
+        "after": [
+          {
+            "result": {
+              "duration": 603190700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6654441500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks on the link from the homepage \"Our Stores\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Our Stores",
+                  "offset": 43
+                }
+              ],
+              "location": "StoreFinderSteps.userClicksOnTheLinkFromTheHomepage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54895200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User accepts the alert",
+            "match": {
+              "location": "StoreFinderSteps.userAcceptsTheAlert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 554162300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "moves the map to be able to view a store from West Palm Beach",
+            "match": {
+              "location": "StoreFinderSteps.movesTheMapToBeAbleToViewAStoreFromWestPalmBeach()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10754400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "scrolls the map for a clear view",
+            "match": {
+              "location": "StoreFinderSteps.scrollsTheMapForAClearView()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180260900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "takes a screenshot for future reference",
+            "match": {
+              "location": "StoreFinderSteps.takesAScreenshotForFutureReference()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Finding a store on the \u0027Our Stores\u0027 page",
+    "description": "",
+    "id": "finding-a-store-on-the-\u0027our-stores\u0027-page",
+    "keyword": "Feature",
+    "uri": "storefinder.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15161018900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should be able to view Summer Dresses option from the navigation menu",
+        "description": "",
+        "id": "selecting-a-submenu-from-the-main-menu;user-should-be-able-to-view-summer-dresses-option-from-the-navigation-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 642507700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162178800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User selects Women \"Women\" tab from the main menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 20
+                }
+              ],
+              "location": "DeletionTestSteps.userSelectsWomenTabFromTheMainMenu(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13504667700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Select Blouses \"Summer Dresses\" from the sub menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Summer Dresses",
+                  "offset": 16
+                }
+              ],
+              "location": "DeletionTestSteps.selectBlousesFromTheSubMenu(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31476600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verifies the \"SUMMER DRESSES \" page verification text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUMMER DRESSES ",
+                  "offset": 14
+                }
+              ],
+              "location": "SummerDressOptionSteps.verifiesThePageVerificationText(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Selecting a submenu from the main menu",
+    "description": "",
+    "id": "selecting-a-submenu-from-the-main-menu",
+    "keyword": "Feature",
+    "uri": "summerdressesoption.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13653436600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should be able to update the price range for the filter options",
+        "description": "",
+        "id": "changing-price-range;user-should-be-able-to-update-the-price-range-for-the-filter-options",
+        "after": [
+          {
+            "result": {
+              "duration": 617469100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 168579300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User selects Women \"Women\" tab from the main menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Women",
+                  "offset": 20
+                }
+              ],
+              "location": "DeletionTestSteps.userSelectsWomenTabFromTheMainMenu(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12685796700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Select Blouses \"Summer Dresses\" from the sub menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Summer Dresses",
+                  "offset": 16
+                }
+              ],
+              "location": "DeletionTestSteps.selectBlousesFromTheSubMenu(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29539000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verifies the \"SUMMER DRESSES \" page verification text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SUMMER DRESSES ",
+                  "offset": 14
+                }
+              ],
+              "location": "SummerDressOptionSteps.verifiesThePageVerificationText(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 434543400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "moves the slider to change the price range",
+            "match": {
+              "location": "PriceRangeTests.movesTheSliderToChangeThePriceRange()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Changing price range",
+    "description": "",
+    "id": "changing-price-range",
+    "keyword": "Feature",
+    "uri": "summerdressespricerangetest.feature"
+  }
+]
